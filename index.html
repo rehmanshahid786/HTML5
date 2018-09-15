@@ -1,22 +1,1251 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>HTML5 Elements and API's</title>
-  </head>
-  <body>
-    <h1>Introduction</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+  <title>HTML5 Elements and API's</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/html5.png" width="30" height="30" class="d-inline-block align-top" alt=""> HMTL5
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container pt-2 pb-2">
+    <div class="row">
+      <div class="col">
+        <div class="accordion" id="html5Elements">
+          <div class="card">
+            <div class="card-header" id="main">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#mainCollapse" aria-expanded="true" aria-controls="mainCollapse">
+                  &lt;main&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="mainCollapse" class="collapse" aria-labelledby="main" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#mainDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#mainCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="mainDescription">
+                    <p>
+                      The main element represents the main content of the body of a document or application.The main content area of a document
+                      includes content that is unique to that document and excludes content that is repeated across a set
+                      of documents such as site navigation links, copyright information, site logos and banners and search
+                      forms (unless the document or application’s main function is that of a search form). Authors must not
+                      include the main element as a descendant of an article, aside, footer, header or nav element.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="mainCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                &lt;/header&gt;
+                                <mark class="text-success font-weight-bold">&lt;main&gt;
+                                    &lt;article&gt;
+                                        &lt;section&gt;...&lt;/section&gt;
+                                        &lt;aside&gt;...&lt;/aside&gt;
+                                    &lt;/article&gt;
+                                &lt;/main&gt;</mark>
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="article">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#articleCollapse" aria-expanded="true" aria-controls="articleCollapse">
+                  &lt;article&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="articleCollapse" class="collapse" aria-labelledby="article" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#articleDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#articleCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="articleDescription">
+                    <p>
+                      The article element represents a complete, or self-contained, composition in a document, page, application, or site. This
+                      could be a magazine, newspaper, technical or scholarly article, an essay or report, a blog or other
+                      social media post. A general rule is that the article element is appropriate only if the element’s
+                      contents would be listed explicitly in the document’s outline. Each article should be identified, typically
+                      by including a heading(h1-h6 element) as a child of the article element. Assistive Technology may convey
+                      the semantics of the article to users. This information can provide a hint to users as to the type
+                      of content. For example the role of the element, which in this case matches the element name "article",
+                      can be announced by screen reader software when a user navigates to an article element. User Agents
+                      may also provide methods to navigate to article elements. When article elements are nested, the inner
+                      article elements represent articles that are in principle related to the contents of the outer article.
+                      For instance, a blog entry on a site could consist of summaries of other blog entries in article elements
+                      nested within the article element for the blog entry. Author information associated with an article
+                      element (q.v. the address element) does not apply to nested article elements.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="articleCS">
+                    <pre>
+                      <code>
+                          &lt;html&gt;
+                              &lt;body&gt;
+                                  &lt;header&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;/header&gt;
+                                  &lt;main&gt;
+                                      <mark class="text-success font-weight-bold">&lt;article&gt;
+                                          &lt;header&gt;
+                                              &lt;h2&gt;Article Heading&lt;/h2&gt;
+                                              &lt;p&gt;Date of Publish...&lt;/p&gt;
+                                          &lt;/header&gt;
+                                          &lt;p&gt;....Content.......&lt;/p&gt;
+                                          &lt;footer&gt;
+                                              &lt;a&gt;Comments...&lt;/a&gt;
+                                          &lt;/footer&gt;
+                                      &lt;/article&gt;</mark>
+                                  &lt;/main&gt;
+                                  &lt;footer&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;/footer&gt;
+                              &lt;/body&gt;
+                          &lt;/html&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="aside">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#asideCollapse" aria-expanded="true" aria-controls="asideCollapse">
+                  &lt;aside&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="asideCollapse" class="collapse" aria-labelledby="aside" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#asideDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#asideCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="asideDescription">
+                    <p>
+                      The aside element represents a section of a page that consists of content that is tangentially related to the content of
+                      the parenting sectioning content, and which could be considered separate from that content. Such sections
+                      are often represented as sidebars in printed typography.The element can be used for typographical effects
+                      like pull quotes or sidebars, for advertising, for groups of nav elements, and for other content that
+                      is considered separate from the main content of the nearest ancestor sectioning content. Assistive
+                      Technology may convey the semantics of the aside to users. This information can provide a hint to users
+                      as to the type of content. For example the role of the element, which in this case is "complementary",
+                      can be announced by screen reader software when a user navigates to an aside element. User Agents may
+                      also provide methods to navigate to aside elements.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="asideCS">
+                    <pre>
+                        <code>
+                            &lt;html&gt;
+                                &lt;body&gt;
+                                    &lt;header&gt;
+                                        &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;/header&gt;
+                                    &lt;main&gt;
+                                        &lt;article&gt;
+                                            &lt;header&gt;
+                                                &lt;h2&gt;Article Heading&lt;/h2&gt;
+                                                &lt;p&gt;Date of Publish...&lt;/p&gt;
+                                            &lt;/header&gt;
+                                            &lt;p&gt;....Content.......&lt;/p&gt;
+                                            <mark class="text-success font-weight-bold">&lt;aside&gt;
+                                                &lt;nav&gt;
+                                                    &lt;h2&gt;Related Posts&lt;/h2&gt;
+                                                     &lt;ol&gt;
+                                                        &lt;li&gt;&lt;a&gt;Post 1&lt;/a&gt;
+                                                        &lt;li&gt;&lt;a&gt;Post 2&lt;/a&gt;
+                                                     &lt;/ol&gt;
+                                                &lt;/nav&gt;
+                                            &lt;/aside&gt;</mark>
+                                            &lt;footer&gt;
+                                                &lt;a&gt;Comments...&lt;/a&gt;
+                                            &lt;/footer&gt;
+                                        &lt;/article&gt;
+                                    &lt;/main&gt;
+                                    &lt;footer&gt;
+                                        &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;/footer&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                      </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="section">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sectionCollapse" aria-expanded="true" aria-controls="sectionCollapse">
+                  &lt;section&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="sectionCollapse" class="collapse" aria-labelledby="section" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#sectionDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#sectionCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="sectionDescription">
+                    <p>
+                      The section element represents a generic section of a document or application. A section, in this context, is a thematic
+                      grouping of content. Each section should be identified, typically by including a heading (h1-h6 element)
+                      as a child of the section element. Examples of sections would be chapters, the various tabbed pages
+                      in a tabbed dialog box, or the numbered sections of a thesis. A Web site’s home page could be split
+                      into sections for an introduction, news items, and contact information.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                    <div class="alert alert-info" role="alert">
+                      The section has an aria-label attribute providing a brief description of the contents. Assistive technology may convey the
+                      region role along with the aria-label value as a hint to users.
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="sectionCS">
+                    <pre>
+                      <code>
+                          &lt;html&gt;
+                          &lt;body&gt;
+                              &lt;header&gt;
+                                  &lt;nav&gt;...&lt;/nav&gt;
+                              &lt;/header&gt;
+                              &lt;main&gt;
+                                  &lt;article&gt;
+                                      &lt;header&gt;
+                                          &lt;h2&gt;Types of memory&lt;/h2&gt;
+                                          &lt;p&gt; Memory provide users with access to information stored on a computer.&lt;/p&gt;
+                                      &lt;/header&gt;
+                                      &lt;p&gt;Computer memory is any physical device capable of storing information temporarily or permanently.&lt;/p&gt;
+                                      &lt;aside&gt;
+                                          &lt;nav&gt;
+                                              &lt;h2&gt;Related Posts&lt;/h2&gt;
+                                               &lt;ol&gt;
+                                                  &lt;li&gt;&lt;a&gt;Post 1&lt;/a&gt;
+                                                  &lt;li&gt;&lt;a&gt;Post 2&lt;/a&gt;
+                                               &lt;/ol&gt;
+                                          &lt;/nav&gt;
+                                      &lt;/aside&gt;
+                                      <mark class="text-success font-weight-bold">&lt;section aria-label="RAM"&gt;
+                                              &lt;h3&gt;Random Access Memory&lt;/h3&gt;
+                                              &lt;p&gt;Random Access Memory (RAM), is a volatile memory.&lt;/p&gt;
+                                      &lt;/section&gt;
+                                      &lt;section aria-label="ROM"&gt;
+                                              &lt;h3&gt;Read Only Memory&lt;/h3&gt;
+                                              &lt;p&gt;Read Only Memory (ROM), is a non-volatile memory.&lt;/p&gt;
+                                      &lt;/section&gt;</mark>
+                                      &lt;footer&gt;
+                                          &lt;a&gt;Comments...&lt;/a&gt;
+                                      &lt;/footer&gt;
+                                  &lt;/article&gt;
+                              &lt;/main&gt;
+                              &lt;footer&gt;
+                                  &lt;nav&gt;...&lt;/nav&gt;
+                              &lt;/footer&gt;
+                          &lt;/body&gt;
+                      &lt;/html&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#headerCollapse" aria-expanded="true" aria-controls="headerCollapse">
+                  &lt;header&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="headerCollapse" class="collapse" aria-labelledby="header" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#headerDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#headerCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="headerDescription">
+                    <p>
+                      The header element represents introductory content for its nearest ancestor sectioning content or sectioning root element.
+                      A header typically contains a group of introductory or navigational aids. When the nearest ancestor
+                      sectioning content or sectioning root element is the body element, then it applies to the whole page.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                    <div class="alert alert-info" role="alert">
+                      A header element is intended to usually contain the section’s heading (an h1–h6 element), but this is not required. The header
+                      element can also be used to wrap a section’s table of contents, a search form, or any relevant logos.
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="headerCS">
+                    <pre>
+                      <code>
+                          &lt;html&gt;
+                              &lt;body&gt;
+                                  <mark class="text-success font-weight-bold">&lt;header&gt;
+                                      &lt;h1&gt;Main Heading&lt;/h1&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;/header&gt;</mark>
+                                  &lt;main&gt;
+                                      &lt;article&gt;
+                                          &lt;section&gt;...&lt;/section&gt;
+                                          &lt;aside&gt;...&lt;/aside&gt;
+                                      &lt;/article&gt;
+                                  &lt;/main&gt;
+                                  &lt;footer&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;/footer&gt;
+                              &lt;/body&gt;
+                          &lt;/html&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="footer">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#footerCollapse" aria-expanded="true" aria-controls="footerCollapse">
+                  &lt;footer&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="footerCollapse" class="collapse" aria-labelledby="footer" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#footerDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#footerCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="footerDescription">
+                    <p>
+                      The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically
+                      contains information about its section such as who wrote it, links to related documents, copyright
+                      data, and the like. When the footer element contains entire sections, they represent appendices, indexes,
+                      long colophons, verbose license agreements, and other such content. Assistive Technology may convey
+                      the semantics of the footer to users when the nearest ancestor sectioning content or sectioning root
+                      element is the body element. This information can provide a hint to users as to the type of content.
+                      For example the role of the element, which in this case is "content information", can be announced
+                      by screen reader software when a user navigates to an footer element that is scoped to the body element.
+                      User Agents may also provide methods to navigate to footer elements scoped to the body element.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                    <div class="alert alert-info" role="alert">
+                      Contact information for the author or editor of a section belongs in an address element, possibly itself inside a footer.
+                      Bylines and other information that could be suitable for both a header or a footer can be placed in
+                      either (or neither). The primary purpose of these elements is merely to help the author write self-explanatory
+                      markup that is easy to maintain and style; they are not intended to impose specific structures on authors.
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="footerCS">
+                    <pre>
+                      <code>
+                          &lt;html&gt;
+                              &lt;body&gt;
+                                  &lt;header&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;/header&gt;
+                                  &lt;main&gt;
+                                      &lt;article&gt;
+                                          &lt;section&gt;...&lt;/section&gt;
+                                          &lt;aside&gt;...&lt;/aside&gt;
+                                          <mark class="text-success font-weight-bold">&lt;footer&gt; <!-- footer for article -->
+                                              &lt;p&gt;Published  Date&lt;/p&gt;
+                                          &lt;/footer&gt;</mark>
+                                      &lt;/article&gt;
+                                  &lt;/main&gt;
+                                  <mark class="text-success font-weight-bold">&lt;footer&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                      &lt;p&gt;&lt;small&gt;Copyright © 2018 Rehman Shahid&lt;/small&gt;&lt;/p&gt;
+                                  &lt;/footer&gt;</mark>
+                              &lt;/body&gt;
+                          &lt;/html&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="nav">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#navCollapse" aria-expanded="true" aria-controls="navCollapse">
+                  &lt;nav&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="navCollapse" class="collapse" aria-labelledby="nav" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#navDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#navCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="navDescription">
+                    <p>
+                      The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation
+                      links.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                    <div class="alert alert-info" role="alert">
+                      In cases where the content of a nav element represents a list of items, use list markup to aid understanding and navigation.Not
+                      all groups of links on a page need to be in a nav element — the element is primarily intended for sections
+                      that consist of major navigation blocks. In particular, it is common for footers to have a short list
+                      of links to various pages of a site, such as the terms of service, the home page, and a copyright page.
+                      The footer element alone is sufficient for such cases; while a nav element can be used in such cases,
+                      it is usually unnecessary.
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="navCS">
+                    <pre>
+                      <code>
+                          &lt;html&gt;
+                              &lt;body&gt;
+                                  &lt;header&gt;
+                                      <mark class="text-success font-weight-bold">&lt;nav&gt;
+                                          &lt;ul&gt;
+                                              &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                              &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                          &lt;/ul&gt;
+                                      &lt;/nav&gt;</mark>
+                                  &lt;/header&gt;
+                                  &lt;main&gt;
+                                      &lt;article&gt;
+                                          &lt;section&gt;...&lt;/section&gt;
+                                          &lt;aside&gt;...&lt;/aside&gt;
+                                      &lt;/article&gt;
+                                  &lt;/main&gt;
+                                  &lt;footer&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;/footer&gt;
+                              &lt;/body&gt;
+                          &lt;/html&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="time">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#timeCollapse" aria-expanded="true" aria-controls="timeCollapse">
+                  &lt;time&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="timeCollapse" class="collapse" aria-labelledby="time" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#timeDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#timeCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="timeDescription">
+                    <p>
+                      The time element represents its contents, along with a machine-readable form of those contents in the datetime attribute.The
+                      datetime attribute may be present. If present, its value must be a representation of the element’s
+                      contents in a machine-readable format. A time element that does not have a datetime content attribute
+                      must not have any element descendants.The datetime value of a time element is the value of the element’s
+                      datetime content attribute, if it has one, otherwise the concatenation of the contents of all the Text
+                      nodes that are children of the time element (ignoring any other nodes such as comments or elements),
+                      in tree order.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="timeCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;article&gt;
+                                        &lt;section&gt;...&lt;/section&gt;
+                                        &lt;aside&gt;...&lt;/aside&gt;
+                                    &lt;/article&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                    <mark class="text-success font-weight-bold">&lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;</mark>
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="figure">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#figureCollapse" aria-expanded="true" aria-controls="figureCollapse">
+                  &lt;figure&gt; &lt;figCaption&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="figureCollapse" class="collapse" aria-labelledby="figure" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#figureDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#figureCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="figureDescription">
+                    <p>
+                      The figure element represents some flow content, optionally with a caption, that is self-contained (like a complete sentence)
+                      and is typically referenced as a single unit from the main flow of the document.The element can be
+                      used to annotate illustrations, diagrams, photos, code listings, etc.
+                      <hr/> The figcaption element represents a caption or legend for the rest of the contents of the figcaption
+                      element’s parent figure element, if any.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="figureCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;article&gt;
+                                        <mark class="text-success font-weight-bold">&lt;h1&gt;Heading&lt;/h1&gt;
+                                        &lt;figure&gt;
+                                            &lt;img src="path" alt=""&gt;
+                                            &lt;figcaption&gt;apion Text.&lt;/figcaption&gt;
+                                        &lt;/figure&gt;</mark>
+                                    &lt;/article&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="detail">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#detailCollapse" aria-expanded="true" aria-controls="detailCollapse">
+                  &lt;detail&gt; &lt;summary&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="detailCollapse" class="collapse" aria-labelledby="detail" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#detailDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#detailCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="detailDescription">
+                    <p>
+                      The details element represents a disclosure widget from which the user can obtain additional information or controls.
+                      <hr/> The first summary element child of the element, if any, represents the summary or legend of the details.
+                      If there is no child summary element, the user agent should provide its own legend (e.g., "Details").The
+                      rest of the element’s contents represents the additional information or controls.
+                      <hr/> The open content attribute is a boolean attribute. If present, it indicates that both the summary
+                      and the additional information is to be shown to the user. If the attribute is absent, only the summary
+                      is to be shown.When the element is created, if the attribute is absent, the additional information
+                      should be hidden; if the attribute is present, that information should be shown. Subsequently, if the
+                      attribute is removed, then the information should be hidden; if the attribute is added, the information
+                      should be shown.
+
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="detailCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;article&gt;
+                                        &lt;h1&gt;Heading&lt;/h1&gt;
+                                        &lt;figure&gt;
+                                            &lt;img src="path" alt=""&gt;
+                                            &lt;figcaption&gt;apion Text.&lt;/figcaption&gt;
+                                        &lt;/figure&gt;
+                                    &lt;/article&gt;
+                                    &lt;section&gt;
+                                        &lt;h1&gt;Heading&lt;/h1&gt;
+                                        <mark class="text-success font-weight-bold">&lt;details&gt;
+                                            &lt;summary&gt;Summary&lt;/summary&gt;
+                                            &lt;p&gt;Other Contents&lt;/p&gt;
+                                        &lt;/details&gt;</mark>
+                                    &lt;/section&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="mark">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#markCollapse" aria-expanded="true" aria-controls="markCollapse">
+                  &lt;mark&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="markCollapse" class="collapse" aria-labelledby="mark" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#markDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#markCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="markDescription">
+                    <p>
+                      The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance
+                      in another context. When used in a quotation or other block of text referred to from the prose, it
+                      indicates a highlight that was not originally present but which has been added to bring the reader’s
+                      attention to a part of the text that might not have been considered important by the original author
+                      when the block was originally written, but which is now under previously unexpected scrutiny. When
+                      used in the main prose of a document, it indicates a part of the document that has been highlighted
+                      due to its likely relevance to the user’s current activity.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="markCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;article&gt;
+                                        &lt;h1&gt;Heading&lt;/h1&gt;
+                                        &lt;figure&gt;
+                                            &lt;img src="path" alt=""&gt;
+                                            &lt;figcaption&gt;apion Text.&lt;/figcaption&gt;
+                                        &lt;/figure&gt;
+                                        &lt;p&gt;some text <mark class="text-success font-weight-bold">&lt;mark&gt;Highlighted Text&lt;/mark&gt;</mark>&lt;/p&gt;
+                                    &lt;/article&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="bdi">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#bdiCollapse" aria-expanded="true" aria-controls="bdiCollapse">
+                  &lt;bdi&gt; &lt;wbr&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="bdiCollapse" class="collapse" aria-labelledby="bdi" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#bdiDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#bdiCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="bdiDescription">
+                    <p>
+                      The bdi element represents a span of text that is to be isolated from its surroundings for the purposes of bidirectional
+                      text formatting.
+                      <hr /> The wbr element represents a line break opportunity.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="bdiCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;p&gt;<mark class="text-success font-weight-bold">&lt;bdi&gt;òñéù òéñą!&lt;/bdi&gt;&lt;/p&gt;</mark>
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;article&gt;
+                                        &lt;h1&gt;Heading&lt;/h1&gt;
+                                        &lt;figure&gt;
+                                            &lt;img src="path" alt=""&gt;
+                                            &lt;figcaption&gt;apion Text.&lt;/figcaption&gt;
+                                        &lt;/figure&gt;
+                                    &lt;/article&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                                    &lt;p&gt;www.<mark class="text-success font-weight-bold">&lt;wbr&gt;</mark>w3.org&lt;/p&gt;
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="output">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#outputCollapse" aria-expanded="true" aria-controls="outputCollapse">
+                  &lt;output&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="outputCollapse" class="collapse" aria-labelledby="output" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#outputDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#outputCS">Code Snippet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#outputExp">Example</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="outputDescription">
+                    <p>
+                      The output element represents the result of a calculation performed by the application, or the result of a user action.The
+                      for content attribute allows an explicit relationship to be made between the result of a calculation
+                      and the elements that represent the values that went into the calculation or that otherwise influenced
+                      the calculation. The for attribute, if specified, must contain a string consisting of an unordered
+                      set of unique space-separated tokens that are case-sensitive, each of which must have the value of
+                      an ID of an element in the same Document.The form attribute is used to explicitly associate the output
+                      element with its form owner. The name attribute represents the element’s name. The output element is
+                      associated with a form so that it can be easily referenced from the event handlers of form controls;
+                      the element’s value itself is not submitted when the form is submitted.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="outputCS">
+                    <pre>
+                    <code>
+                        &lt;html&gt;
+                            &lt;body&gt;
+                                &lt;header&gt;
+                                    &lt;nav&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/header&gt;
+                                &lt;main&gt;
+                                    &lt;article&gt;
+                                        &lt;h1&gt;Heading&lt;/h1&gt;
+                                        &lt;figure&gt;
+                                            &lt;img src="path" alt=""&gt;
+                                            &lt;figcaption&gt;apion Text.&lt;/figcaption&gt;
+                                        &lt;/figure&gt;
+                                        <mark class="text-success font-weight-bold">&lt;output&gt;seen by&lt;/output&gt;</mark>
+                                    &lt;/article&gt;
+                                &lt;/main&gt;
+                                &lt;footer&gt;
+                                    &lt;nav&gt;...&lt;/nav&gt;
+                                    &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                                &lt;/footer&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                  </pre>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="outputExp">
+                    <form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber" class="form-inline pt-4">
+                      <div class="form-group mb-2">
+                        <label for="a" class="sr-only">a</label>
+                        <input type="number" name="a" class="form-control">
+                      </div>
+                      +
+                      <div class="form-group mb-2">
+                        <label for="b" class="sr-only">b</label>
+                        <input type="number" name="b" class="form-control">
+                      </div>
+                      =
+                      <div class="form-group mb-2">
+                        <output name=o for="a b"></output>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="embed">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#embedCollapse" aria-expanded="true" aria-controls="embedCollapse">
+                  &lt;embed&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="embedCollapse" class="collapse" aria-labelledby="embed" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#embedDescription">Description</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#embedCS">Code Snippet</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="embedDescription">
+                    <p>
+                      The embed element provides an integration point for an external (typically non-HTML) application or interactive content.
+                      <hr /> The src attribute gives the address of the resource being embedded. The attribute, if present, must
+                      contain a valid non-empty URL potentially surrounded by spaces.
+                      <hr /> The type attribute, if present, gives the MIME type by which the plugin to instantiate is selected.
+                      The value must be a valid mime type. If both the type attribute and the src attribute are present,
+                      then the type attribute must specify the same type as the explicit Content-Type metadata of the resource
+                      given by the src attribute.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                  <div class="tab-pane container fade highlight pb-0" id="embedCS">
+                    <pre>
+                      <code>
+                          &lt;html&gt;
+                              &lt;body&gt;
+                                  &lt;header&gt;
+                                      &lt;nav&gt;
+                                          &lt;ul&gt;
+                                              &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                              &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                          &lt;/ul&gt;
+                                      &lt;/nav&gt;
+                                  &lt;/header&gt;
+                                  &lt;main&gt;
+                                      &lt;article&gt;
+                                          &lt;h1&gt;Heading&lt;/h1&gt;
+                                          &lt;figure&gt;
+                                              &lt;img src="path" alt=""&gt;
+                                              &lt;figcaption&gt;apion Text.&lt;/figcaption&gt;
+                                          &lt;/figure&gt;
+                                          <mark class="text-success font-weight-bold">&lt;embed src="" type=""&gt;&lt;/embed&gt;</mark>
+                                      &lt;/article&gt;
+                                  &lt;/main&gt;
+                                  &lt;footer&gt;
+                                      &lt;nav&gt;...&lt;/nav&gt;
+                                      &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                                  &lt;/footer&gt;
+                              &lt;/body&gt;
+                          &lt;/html&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="canvas">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#canvasCollapse" aria-expanded="true" aria-controls="canvasCollapse">
+                  &lt;canvas&gt;
+                </button>
+              </h5>
+            </div>
+
+            <div id="canvasCollapse" class="collapse" aria-labelledby="canvas" data-parent="#html5Elements">
+              <div class="card-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#canvasDescription">Description</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane container active" id="canvasDescription">
+                    <p>
+                      The canvas element provides scripts with a resolution-dependent bitmap canvas, which can be used for rendering graphs, game
+                      graphics, art, or other visual images on the fly.
+                      <span class="badge badge-info">Copied From W3C</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="video">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#videoCollapse" aria-expanded="true" aria-controls="videoCollapse">
+                &lt;video&gt;
+              </button>
+            </h5>
+          </div>
+
+          <div id="videoCollapse" class="collapse" aria-labelledby="video" data-parent="#html5Elements">
+            <div class="card-body">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#videoDescription">Description</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#videoCS">Code Snippet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#videoEH">Error Handling</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane container active" id="videoDescription">
+                  <p>
+                    A video element is used for playing videos or movies, and audio files with captions.Content may be provided inside the video
+                    element. User agents should not show this content to the user; it is intended for older Web browsers
+                    which do not support video, so that legacy video plugins can be tried, or to show text to the users of
+                    these older browsers informing them of how to access the video contents.
+                    <hr />
+                    <mark>
+                      Captions can be provided, either embedded in the video stream or as external files using the track element. Sign-language
+                      tracks can be provided, again either embedded in the video stream. Audio descriptions can be provided,
+                      either as a separate track embedded in the video stream, or in text form using a WebVTT file referenced
+                      using the track element and synthesized into speech by the user agent. WebVTT can also be used to provide
+                      chapter titles. For users who would rather not use a media element at all, transcripts or other textual
+                      alternatives can be provided by simply linking to them in the prose near the video element.
+                    </mark>
+                    <hr /> The src, preload, autoplay, loop, muted, and controls attributes are the attributes common to all media
+                    elements.The poster content attribute gives the address of an image file that the user agent can show
+                    while no video data is available. The attribute, if present, must contain a valid non-empty URL potentially
+                    surrounded by spaces.
+                    <span class="badge badge-info">Copied From W3C</span>
+                  </p>
+                </div>
+                <div class="tab-pane container fade highlight pb-0" id="videoCS">
+                  <pre>
+                  <code>
+                      &lt;html&gt;
+                          &lt;body&gt;
+                              &lt;header&gt;
+                                  &lt;nav&gt;
+                                      &lt;ul&gt;
+                                          &lt;li&gt;&lt;a&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                          &lt;li&gt;&lt;a&gt;Contac Us&lt;/a&gt;&lt;/li&gt;
+                                      &lt;/ul&gt;
+                                  &lt;/nav&gt;
+                              &lt;/header&gt;
+                              &lt;main&gt;
+                                  &lt;article&gt;
+                                      &lt;h1&gt;Heading&lt;/h1&gt;
+                                      <mark class="text-success font-weight-bold">&lt;video&gt;
+                                        &lt;source src="vid.mp4"&gt;
+                                        &lt;source src="vid.ogg"&gt;
+                                        &lt;source src="vid.webm"&gt;
+                                        &lt;track
+                                          kind="subtitles"
+                                          label="Spanish Subtitles"
+                                          src="es.vtt"
+                                          srclang="en"&gt;
+                                       &lt;/video&gt;</mark>
+                                  &lt;/article&gt;
+                              &lt;/main&gt;
+                              &lt;footer&gt;
+                                  &lt;nav&gt;...&lt;/nav&gt;
+                                  &lt;time property="published" datetime="2018-06-18" &gt;five days ago &lt;/time &gt;
+                              &lt;/footer&gt;
+                          &lt;/body&gt;
+                      &lt;/html&gt;
+                  </code>
+                </pre>
+                </div>
+                <div class="tab-pane container fade highlight pb-0" id="videoEH">
+                  <pre>
+                  <code>
+                    &lt;script&gt;
+                      function failed(e) {
+                        //snippet taken from https://www.w3.org
+                        // video playback failed - show a message saying why
+                        switch (e.target.error.code) {
+                          case e.target.error.MEDIA_ERR_ABORTED:
+                            alert('You aborted the video playback.');
+                            break;
+                          case e.target.error.MEDIA_ERR_NETWORK:
+                            alert('A network error caused the video download to fail part-way.');
+                            break;
+                          case e.target.error.MEDIA_ERR_DECODE:
+                            alert('The video playback was aborted due to a corruption problem or because the video used features your browser did not support.');
+                            break;
+                          case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                            alert('The video could not be loaded, either because the server or network failed or because the format is not supported.');
+                            break;
+                          default:
+                            alert('An unknown error occurred.');
+                            break;
+                        }
+                      }
+                      &lt;/script&gt;
+                      &lt;p&gt;&lt;video src="tgif.vid" autoplay controls onerror="failed(event)"&gt;&lt;/video&gt;&lt;/p&gt;
+                      &lt;p>&lt;a href="tgif.vid">Download the video file&lt;/a&gt;.&lt;/p&gt;
+                  </code>
+                </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
